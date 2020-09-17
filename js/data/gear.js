@@ -5639,7 +5639,7 @@ var gear = {
          "maxdmg": 303,
          "speed": 3.7,
          "id": 21856,
-         "source": "Naxx",
+         "source": "AQ40",
          "phase": 6,
          "type": "Axe",
          "ppm": 1,
