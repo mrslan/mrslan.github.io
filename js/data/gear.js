@@ -5640,7 +5640,7 @@ var gear = {
          "speed": 3.7,
          "id": 21856,
          "source": "AQ40",
-         "phase": 6,
+         "phase": 5,
          "type": "Axe",
          "ppm": 1,
          "magicdmg": 152,
