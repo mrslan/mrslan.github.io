@@ -5536,7 +5536,7 @@ var gear = {
          "ppm": 1,
       },
       {
-         "name": "Dark Edge of Insanity",
+         "name": "Dark Edge of Insanity 2",
          "str": 35,
          "sta": 25,
          "agi": 19,
