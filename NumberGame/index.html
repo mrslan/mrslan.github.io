@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Numeral Quest - Web Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" aria-label="Numeral Quest game">
+      <header class="header">
+        <div class="heading">
+          <p class="eyebrow">Numeral Quest</p>
+          <h1>Guess the Number</h1>
+          <p class="subtitle"><span id="systems-count">50</span> writing traditions and <span id="challenge-total">500</span> numeral challenges</p>
+        </div>
+        <div class="scores" aria-label="Session scores">
+          <div class="stat"><span>Score</span><strong id="score">0/0</strong></div>
+          <div class="stat"><span>Streak</span><strong id="streak">0</strong></div>
+          <div class="stat"><span>Best</span><strong id="best">0</strong></div>
+        </div>
+      </header>
+
+      <nav class="controls" aria-label="Game controls">
+        <div class="periods" role="group" aria-label="Question collection">
+          <button class="period selected" type="button" data-period="all" aria-pressed="true">All</button>
+          <button class="period" type="button" data-period="modern" aria-pressed="false">Modern</button>
+          <button class="period" type="button" data-period="historical" aria-pressed="false">Historical</button>
+        </div>
+        <p class="available"><span id="available">500</span> available symbols</p>
+        <button class="reset" type="button" id="reset">New Session</button>
+      </nav>
+
+      <section class="board" aria-live="polite">
+        <section class="play">
+          <article class="question">
+            <div class="question-header">
+              <span class="badge" id="badge">Historical</span>
+              <span class="system" id="system"></span>
+            </div>
+            <div class="glyph" id="glyph"></div>
+            <p class="prompt">Which value does this notation represent?</p>
+          </article>
+
+          <div class="answers" id="answers" aria-label="Answer choices"></div>
+
+          <section class="feedback" id="feedback">
+            <p>Choose a value above, or press a number key. Press <kbd>0</kbd> for ten.</p>
+          </section>
+        </section>
+
+        <aside class="context" id="context" aria-label="Origin and numeral facts"></aside>
+      </section>
+    </main>
+
+    <script src="records.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
